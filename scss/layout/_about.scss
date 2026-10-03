@@ -4,12 +4,26 @@
 }
 
 .about__skewed {
+  overflow: hidden;
   position: absolute;
   bottom: 100%;
   z-index: 1;
   width: 100%;
-  height: 6vw;
+  height: 5vw;
   fill: $white;
+
+
+}
+
+.about__skewed-item {
+  position: absolute;
+  display: block;
+  width: 200%;
+  height: 120%;
+  left: -50%;
+  top: 40%;
+  background-color: white;
+  transform: rotate(-2deg)
 }
 
 .about__wrap {
@@ -18,7 +32,6 @@
 
 .about__text {
   margin-bottom: $global-margin / 1.5;
-  // color: $light-gray;
   color: darken($light-gray, 20);
 
   *:last-child {
@@ -35,9 +48,7 @@
   background-color: $dark-gray;
 }
 
-.about__content {
-  
-}
+.about__content {}
 
 .about__img {
   padding: 0 15px;
@@ -51,12 +62,12 @@
 }
 
 @include breakpoint(small) {
- 
+
   .about {
     padding: $global-padding * 1.5 0;
   }
 
-  
+
 
 }
 
@@ -77,47 +88,18 @@
 
   .about__line {
     position: relative;
-
-    // &:after {
-    //   content: '';
-    //   position: absolute;
-    //   display: block;
-    //   top: -$global-padding / 1.5;
-    //   bottom: -$global-padding / 1.5;
-    //   width: 100%;
-    //   right: 0;
-    //   width: span(6);
-    //   background: url("../img/about-bg.png") no-repeat left center;
-    //   background-size: contain;
-    // }
   }
-
-  // .about__img {
-
-  //   position: absolute;
-  //   display: block;
-  //   top: -$global-padding / 1.5;
-  //   bottom: -$global-padding / 1.5;
-  //   width: 100%;
-  //   right: 0;
-  //   width: span(6);
-  //   background: url("../img/about-bg.png") no-repeat left center;
-  //   background-size: contain;
-  // }
 
   .about__img {
     max-width: 100%;
     margin: 0;
-    padding: 0;	
+    padding: 0;
     position: absolute;
     display: block;
     top: -$global-padding / 1.5;
     bottom: -$global-padding / 1.5;
-    // width: 100%;
     right: 0;
     width: span(6);
-    // background: url("../img/about-bg.png") no-repeat left center;
-    // background-size: contain;
 
     img {
       @include center-y();
@@ -144,10 +126,7 @@
 
   .about {
     padding: $global-padding * 2 0 $global-padding * 3;
+    padding-top: $global-padding * 1;
   }
 
 }
-
-
-
-

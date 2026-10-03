@@ -1,58 +1,65 @@
 .usa-calc {
   padding: $global-padding  0;
   position: relative;
-  // background-size: cover;
-  // background: rgba($dark-gray, .8);
-
-
-  // &::before {
-  //   content: '';
-  //   position: absolute;
-  //   display: block;
-  //   left: 0;
-  //   right: 0;
-  //   top: 0;
-  //   bottom: 0;
-  //   z-index: -1;
-  //   background: $black url("../img/content/hero-slider/1.jpg") center center no-repeat;
-  // }
 }
 
-.usa-calc__decorative {
-  top: -20px;
-  left: 0;
-  right: 0;
-  height: 65px;
-  position: absolute;
+ .usa-calc__skewed {
   overflow: hidden;
-
-    &::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 150px;
-    height: 40px;
-    bottom: 19px;
-    background-color: $primary-color;
-    left: -80px;
-    box-shadow: 4px 1px 0 2px $light-gray;
-    transform: skew(-58deg, 10deg);
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 150px;
-    height: 40px;
-    bottom: 19px;
-    background-color: $primary-color;
-    right: -80px;
-    box-shadow: -4px 1px 0 2px $light-gray;
-    transform: skew(58deg, -10deg);
-  }
+  position: absolute;
+  bottom: 100%;
+  z-index: 1;
+  width: 100%;
+  height: 5vw;
+  fill: $white;
 
 }
+
+.usa-calc__skewed-item {
+  position: absolute;
+  display: block;
+  width: 200%;
+  height: 120%;
+  left: -50%;
+  top: 40%;
+  background-color: white;
+  transform: rotate(2deg)
+}
+
+// .usa-calc__decorative {
+//   top: -20px;
+//   left: 0;
+//   right: 0;
+//   height: 65px;
+//   position: absolute;
+//   overflow: hidden;
+
+//     &::before {
+//     content: '';
+//     position: absolute;
+//     display: block;
+//     width: 150px;
+//     height: 40px;
+//     bottom: 19px;
+//     background-color: $primary-color;
+//     left: -80px;
+//     box-shadow: 4px 1px 0 2px $light-gray;
+//     transform: skew(-58deg, 10deg);
+//   }
+
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     display: block;
+//     width: 150px;
+//     height: 40px;
+//     bottom: 19px;
+//     background-color: $primary-color;
+//     right: -80px;
+//     box-shadow: -4px 1px 0 2px $light-gray;
+//     transform: skew(58deg, -10deg);
+//   }
+
+// }
 
 .usa-calc__wrap {
   @include container();    
@@ -109,6 +116,7 @@
 
   .usa-calc {
     padding: $global-padding * 2 0;
+    padding-top: $global-padding;
   }
 
 }

@@ -97,33 +97,18 @@
 	}
 }
 
-// @include breakpoint(small) {
-	
-// 	.section-heading {
-// 		font-size: 3rem;
-// 	}
-
-// }
-
-// @include breakpoint(small) {
-	
-// 	.section-heading {
-// 		font-size: 3.4rem;
-// 		margin-bottom: $global-margin;
-
-// 	}
-
-// }
 
 @include breakpoint(xsmall) {
 	
 	.section-heading {
 		font-size: 3.4rem;
-	}
 
-	&--small {
+		&--small {
 		font-size: 2.6rem;
 	}
+	}
+
+	
 
 }
 
@@ -158,11 +143,6 @@
 	
 	.section-heading {
 		font-size: 4.8rem;
-		// margin-bottom: $global-margin * 1.5;
-
-		// &--small-margin {
-		// 	margin-bottom: $global-margin / 1.5;
-		// }
 
 		&--small {
 			font-size: 3.8rem;

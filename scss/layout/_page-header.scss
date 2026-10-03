@@ -1,90 +1,4 @@
-// .page-header {
-//   position: fixed;
-//   z-index: 6;
-//   width: 100%;
-//   transition: .05s ease;
 
-//   &--no-js {
-//     position: static;
-//     background-color: $dark-gray;
-//   }
-
-// }
-
-// .page-header__top { 
-//   display: none;
-//   padding: $global-padding / 4 0;
-//   border-bottom: 1px solid rgba($white, .5);
-//   background-color: rgba($dark-gray, .7);
-// }
-
-// .page-header__bottom {
-//   padding: $global-padding / 4 0;
-//   background-color: rgba($dark-gray, .7);
-//   transition: $global-transition;
-
-//   &--scrolled {
-//     padding: $global-padding / 6 0;
-//     background-color: $dark-gray;
-//   }
-// }
-
-// .page-header__wrap {
-//   @include container();
-//   flex-wrap: wrap;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-// }
-
-// .page-header__bottom-btn {
-//   display: none;
-// }
-
-
-// @include breakpoint(small) {
-
-//   .page-header__top {
-//     display: block;
-//   }
-
-//   .page-header__top-text {
-//     margin: 0;
-//     margin-bottom: $global-margin / 6;
-//     width: 100%;
-//     font-size: $small-font-size;
-//     color: $light-gray;
-//   }
-
-
-  
-
-// }
-
-// @include breakpoint(large) {
-
-//   .page-header__bottom-btn {
-//     display: block;
-//   }
-
-//   .page-header__header-contacts {
-//     order: 1
-//   }
-
-//   .page-header__top-text {
-//     order: 2;
-//     width: auto;
-//     margin: 0 gutter();
-//   }
-
-//   .page-header__social {
-//     order: 3;
-//   }
-
-// }
-
-
-/////////////////////////////////
 .page-header {
   position: fixed;
   z-index: 6;
@@ -101,7 +15,6 @@
 .page-header__top { 
   // display: none;
   padding: $global-padding / 4 0;
-  // border-bottom: 1px solid rgba($white, .5);
   transition: .5s ease;
   background-color: rgba($dark-gray, .7);
 
@@ -111,15 +24,6 @@
   }
 }
 
-// .page-header__bottom {
-  // background-color: rgba($dark-gray, .7);
-  // transition: $global-transition;
-
-  // &--scrolled {
-  //   padding: $global-padding / 6 0;
-  //   background-color: $dark-gray;
-  // }
-// }
 
 .page-header__top-wrap {
   @include container();
@@ -156,11 +60,6 @@
 
 @include breakpoint(small) {
 
-  
-
-  // .page-header__top {
-  //   display: block;
-  // }
 
   .page-header__top-text {
     display: block;
@@ -222,14 +121,5 @@
     margin-right: gutter();
   }
 
-//   .page-header__top-text {
-//     order: 2;
-//     width: auto;
-//     margin: 0 gutter();
-//   }
-
-//   .page-header__social {
-//     order: 3;
-//   }
 
 }

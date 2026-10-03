@@ -3,43 +3,65 @@
   position: relative;
 
  }
-  
 
-.team__decorative {
-  top: -20px;
-  left: 0;
-  right: 0;
-  height: 65px;
-  position: absolute;
+ .team__skewed {
   overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 150px;
-    height: 40px;
-    bottom: 19px;
-    background-color: $primary-color;
-    left: -80px;
-    box-shadow: 4px 1px 0 2px $light-gray;
-    transform: skew(-58deg, 10deg);
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 150px;
-    height: 40px;
-    bottom: 19px;
-    background-color: $primary-color;
-    right: -80px;
-    box-shadow: -4px 1px 0 2px $light-gray;
-    transform: skew(58deg, -10deg);
-  }
+  position: absolute;
+  bottom: 100%;
+  z-index: 1;
+  width: 100%;
+  height: 5vw;
+  fill: $white;
 
 }
+
+.team__skewed-item {
+  position: absolute;
+  display: block;
+  width: 200%;
+  height: 120%;
+  left: -50%;
+  top: 40%;
+  background-color: white;
+  transform: rotate(2deg)
+}
+  
+
+// .team__decorative {
+//   top: -20px;
+//   left: 0;
+//   right: 0;
+//   height: 65px;
+//   position: absolute;
+//   overflow: hidden;
+
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     display: block;
+//     width: 150px;
+//     height: 40px;
+//     bottom: 19px;
+//     background-color: $primary-color;
+//     left: -80px;
+//     box-shadow: 4px 1px 0 2px $light-gray;
+//     transform: skew(-58deg, 10deg);
+//   }
+
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     display: block;
+//     width: 150px;
+//     height: 40px;
+//     bottom: 19px;
+//     background-color: $primary-color;
+//     right: -80px;
+//     box-shadow: -4px 1px 0 2px $light-gray;
+//     transform: skew(58deg, -10deg);
+//   }
+
+// }
 
 .team__wrap {
   @include container(400px);
@@ -109,6 +131,7 @@
 
   .team {
     padding: $global-padding * 2  0;
+    padding-top: $global-padding;
   }
 
 }
