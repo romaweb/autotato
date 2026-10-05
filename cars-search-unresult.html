@@ -18,10 +18,18 @@
 	<!-- page-header -->
 	<header class="page-header page-header--no-js">
 		<div class="page-header__top">
-			<div class="page-header__wrap">
-				<p class="page-header__top-text">Некоторый текст для теста акция (Купить по выгодной цене) или адрес офиса компании</p>
+			<div class="page-header__top-wrap">
 
-				<!-- header contacts -->
+				<!-- page-logo -->
+				<a href="" class="page-logo page-header__page-logo">
+					<img src="img/logo.svg" alt="">
+				</a>
+				<!-- / page-logo -->
+
+				<p class="page-header__top-text">Компания "WorldAuto" - официальный импортер по доставке авто из США и Европы
+				</p>
+
+				<!-- header-contacts -->
 				<ul class="header-contacts page-header__header-contacts">
 					<li class="header-contacts__item">
 						<span class="header-contacts__item-icon">
@@ -34,76 +42,48 @@
 					<li class="header-contacts__item">
 						<span class="header-contacts__item-icon">
 							<svg>
-									<use xlink:href="img/symbol-defs.svg#icon-phone"></use>
+								<use xlink:href="img/symbol-defs.svg#icon-phone"></use>
+							</svg>
+						</span>
+						<a href="tel:" class="header-contacts__item-text">+38 096 524 24 74</a>
+					</li>
+					<li class="header-contacts__item">
+						<span class="header-contacts__item-icon">
+							<svg>
+								<use xlink:href="img/symbol-defs.svg#icon-phone"></use>
 							</svg>
 						</span>
 						<a href="mailto:" class="header-contacts__item-text">+38 096 524 24 74</a>
 					</li>
 				</ul>
-				<!-- header contacts -->
+				<!-- / header-contacts -->
 
-				
 
-				<!-- social -->
-				<ul class="social page-header__social">
-					<li class="social__item">
-						<a href="" class="social__item-lnk social__item-lnk--white social__item-lnk--small">
-							<svg>
-								<use xlink:href="img/symbol-defs.svg#icon-instagram"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__item">
-						<a href="" class="social__item-lnk social__item-lnk--white social__item-lnk--small">
-							<svg>
-								<use xlink:href="img/symbol-defs.svg#icon-facebook"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__item">
-						<a href="" class="social__item-lnk  social__item-lnk--white social__item-lnk--small">
-							<svg>
-								<use xlink:href="img/symbol-defs.svg#icon-telegram"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social__item">
-						<a href="" class="social__item-lnk  social__item-lnk--white social__item-lnk--small">
-							<svg>
-								<use xlink:href="img/symbol-defs.svg#icon-youtube"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
-				<!-- / social -->
-		
-			</div>
-		</div>
-		<div class="page-header__bottom">
-			<div class="page-header__wrap">
-				
-				<!-- page-logo -->
-				<a href="" class="page-logo">
-					<img src="img/logo.svg" alt="">
-				</a>
-				<!-- / page-logo -->
+				<!-- btn -->
+				<a href="" class="btn btn--small btn--popup-contact page-header__bottom-btn"><span class="btn__text">Оставить
+						заявку</span></a>
+				<!-- / btn -->
 
 				<!-- nav-toggle -->
-				<div class="nav-toggle">
+				<div class="nav-toggle page-header__nav-toggle">
 					<svg>
 						<use xlink:href="img/symbol-defs.svg#icon-menu"></use>
 					</svg>
-				</div>				
-				<!-- nav-toggle -->
+				</div>
+				<!-- / nav-toggle -->
+			</div>
+		</div>
+		<div class="page-header__bottom">
+			<div class="page-header__bottom-wrap">
 
 				<!-- main-nav -->
 				<nav class="main-nav">
 					<ul class="main-nav__list">
 						<li class="main-nav__item">
-							<a href="" class="main-nav__item-lnk">
+							<a href="" class="main-nav__item-lnk main-nav__item-lnk--active">
 								<span class="main-nav__item-icon">
 									<svg>
-											<use xlink:href="img/symbol-defs.svg#icon-home"></use>
+										<use xlink:href="img/symbol-defs.svg#icon-home"></use>
 									</svg>
 								</span>
 								<span class="main-nav__item-text">Главная</span>
@@ -113,16 +93,23 @@
 							<a href="" class="main-nav__item-lnk">Авто из США</a>
 						</li>
 						<li class="main-nav__item">
-							<a href="" class="main-nav__item-lnk">Авто из Европы</a>
+							<a href="" class="main-nav__item-lnk">Авто в наличии</a>
 						</li>
 						<li class="main-nav__item">
-							<a href="" class="main-nav__item-lnk main-nav__item-lnk--active">Новости автомира</a>
+							<a href="" class="main-nav__item-lnk">Примеры авто</a>
 						</li>
 						<li class="main-nav__item">
 							<a href="" class="main-nav__item-lnk">Контакты</a>
 						</li>
+						<li class="main-nav__item">
+							<a href="" class="main-nav__item-lnk">Выполненые заявки</a>
+						</li>
 					</ul>
-					<a href="" class="btn btn--small btn--popup-contact main-nav__btn"><span class="btn__text">Оставить заявку</span></a>
+
+					<!-- btn -->
+					<a href="" class="btn btn--small btn--popup-contact main-nav__btn"><span class="btn__text">Оставить
+							заявку</span></a>
+					<!-- / btn -->
 
 					<div class="main-nav__icon-close">
 						<svg>
@@ -131,16 +118,13 @@
 					</div>
 
 				</nav>
-				<!-- main-nav -->
-				
-				<!-- btn -->
-				<a href="" class="btn btn--small btn--popup-contact page-header__bottom-btn"><span class="btn__text">Оставить заявку</span></a>
-				<!-- / btn -->
+				<!-- / main-nav -->
+
 			</div>
 		</div>
 
 	</header>
-	<!-- / page-header -->
+	<!-- page-header -->
 
 	<!-- hero-block -->
 	<div class="hero-block">
@@ -166,20 +150,16 @@
 	
 	<!-- news-page -->
 	<section class="cars-page">
-		<div class="cars-page__decorative"></div>
 		<div class="cars-page__wrap">
 
 			<!-- search-form -->
 			<form action="" class="search-form">
 				<input type="text" class="input-field search-form__input-field" placeholder="Искать авто...">
 
-				<button type="submit" class="btn btn--secondary btn--icon">
-					<!-- <span class="btn__text search-form__btn-text">Искать</span> -->
-					<span class="btn__icon">
+				<button type="submit" class="search-form__btn btn-icon">
 						<svg>
 							<use xlink:href="img/symbol-defs.svg#icon-search"></use>
 						</svg>
-					</span>
 				</button>
 			</form>
 			<!-- / search-form -->
@@ -194,6 +174,12 @@
 
 	<!-- page-footer -->
 	<footer class="page-footer">
+		<a href="" class="page-footer__scroll-top scroll-top">
+			<svg>
+				<use xlink:href="img/symbol-defs.svg#icon-arrow-left"></use>
+			</svg>
+		</a>
+		<!-- <div class="page-footer__decorative"></div> -->
 		<div class="page-footer__wrap">
 
 			<p class="page-footer__copyright">&copy;2019.&nbsp; <a href="">Worldauto.com.ua</a></p>
@@ -209,27 +195,6 @@
 	</footer>
 	<!-- page-footer -->
 
-	<!-- scrollup -->
-	<div class="car-scroll">
-			<img src="img/car-up.png" alt="">
-	</div>
-	<!-- / scrollup -->
-
-	<!-- preloader -->
-	<div class="preloader">
-		<div class="preloader__wrap">
-
-			<!-- speedometr -->
-			<div class="speedometr">
-				<div class="speedometr__face">
-					<div class="speedometr__needle"></div>
-				</div>	
-			</div>
-			<!-- / speedometr -->
-			<p class="preloader__text">www.worldauto.com.ua</p>
-		</div>
-	</div>
-	<!-- / preloader -->
 
 	<!-- contact-popup -->
 	<form action="" class="popup popup--contact popup--no-js">

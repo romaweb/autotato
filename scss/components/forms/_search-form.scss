@@ -1,13 +1,11 @@
 .search-form {
 	display: flex;
-	// display: block;
 	margin: auto;
 	margin-bottom: $global-margin / 1.5;
 	max-width: 768px;
 
 	padding: $global-padding / 5 gutter() / 4;
 	background-color: $white;
-	// border: 4px solid $primary-color;
 }
 
 .search-form__input-field {
@@ -15,9 +13,13 @@
 	// margin-right: gutter() / 2;
 }
 
-.search-form__btn-text {
-	display: none;
+.search-form__btn {
+	flex: 0 0 auto;
 }
+
+// .search-form__btn-text {
+// 	display: none;
+// }
 
 @include breakpoint(small) {
 
