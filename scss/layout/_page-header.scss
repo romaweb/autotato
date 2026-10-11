@@ -13,7 +13,6 @@
 }
 
 .page-header__top { 
-  // display: none;
   padding: $global-padding / 4 0;
   transition: .5s ease;
   background-color: rgba($dark-gray, .7);
@@ -31,6 +30,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  column-gap: gutter() / 2;
 }
 
 .page-header__page-logo {
@@ -55,6 +55,10 @@
 }
 
 .page-header__social {
+  display: none;
+}
+
+.page-header__language-menu {
   display: none;
 }
 
@@ -119,7 +123,13 @@
   .page-header__header-contacts {
     display: block;
     margin-right: gutter();
+    flex: 0 0 auto;
   }
 
+  .page-header__language-menu {
+    display: flex;
+    flex: 0 0 auto;
+    margin-right: gutter();
+}
 
 }

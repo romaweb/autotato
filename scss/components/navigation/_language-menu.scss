@@ -1,0 +1,40 @@
+// Language Menu
+// ==========================
+//
+
+.language-menu {
+	@include reset-list();
+	// margin-top: auto;
+	display: flex;
+}
+
+.language-menu__item {
+	flex: 0 0 auto;
+}
+
+.language-menu__lnk {
+	display: block;
+	padding: gutter() / 8 gutter() / 4;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $white;
+	font-size: 13px;
+	font-weight: $global-weight-semi-bold;
+	cursor: pointer;
+	transition: $global-transition;
+
+	&:hover {
+		color: $white;
+		background-color: $black;
+	}
+
+	&--active {
+		background-color: $primary-color;
+	}
+}
+
+@include breakpoint(small) {
+	.language-menu__lnk {
+		font-size: 13px;
+	}
+}
